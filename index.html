@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Access: Sequential vs Direct Access</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sequential vs Direct Access Visualization</h1>
+        <p>Explore file access methods in an OS environment:</p>
+
+        <!-- Action Buttons -->
+        <div class="controls">
+            <button id="sequential-btn" class="control-btn">Sequential Access</button>
+            <button id="direct-btn" class="control-btn">Direct Access</button>
+        </div>
+
+        <!-- Input for Specific Direct Access -->
+        <div class="input-controls">
+            <input type="number" id="block-number" placeholder="Enter Block Number" min="1" max="10">
+            <button id="custom-direct-btn" class="control-btn">Access Block</button>
+        </div>
+
+        <!-- Visualization Area -->
+        <div class="visualization">
+            <div id="data-blocks"></div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+
+        <!-- Time Box -->
+        <div class="time-box">
+            <p id="time-text">Time Taken: <span id="time-taken">0s</span></p>
+        </div>
+
+        <!-- Message Box -->
+        <div class="message-box">
+            <h2>Access Log</h2>
+            <div id="log-messages"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

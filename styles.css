@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+/* Title and Paragraph */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #00ff7f;
+}
+
+p {
+    font-size: 14px;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.control-btn {
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #007acc;
+    color: #dcdcdc;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.control-btn:hover {
+    background-color: #005a9e;
+    box-shadow: 0 4px 8px rgba(0, 122, 204, 0.5);
+}
+
+/* Input Controls Styling */
+.input-controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#block-number {
+    padding: 10px;
+    width: 130px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #dcdcdc;
+    background-color: #333;
+    text-align: center;
+}
+
+/* Visualization Area */
+.visualization {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#data-blocks {
+    display: flex;
+    gap: 15px;
+}
+
+/* Data Block Styling */
+.block {
+    width: 60px;
+    height: 60px;
+    background-color: #3c3c3c;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #dcdcdc;
+    border-radius: 4px;
+    transition: transform 0.3s ease, background-color 0.4s ease;
+}
+
+.block.active {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+}
+
+.block.direct {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    position: relative;
+    width: 85%;
+    height: 16px;
+    background-color: #444;
+    margin: 25px auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    background-color: #007acc;
+    width: 0;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Time Box Styling */
+.time-box {
+    margin-top: 15px;
+}
+
+#time-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+/* Message Box (Log Area) */
+.message-box {
+    margin-top: 30px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #dcdcdc;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.message-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #00ff7f;
+    margin-bottom: 10px;
+}
+
+#log-messages {
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 13px;
+    color: #dcdcdc;
+    line-height: 1.5;
+    border: 1px solid #555;
+}
